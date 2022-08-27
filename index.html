@@ -13,30 +13,45 @@
 <body>
   <!--<audio> elements go in here-->
   <div id="audio-wrapper"></div>
-  
+
+  <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
   <script src="libraries/p5.min.js"></script>
   <script src="libraries/matter.min.js"></script>
   <script src="libraries/pd.js"></script>
+  <script src="libraries/bower_components/pathfinding/pathfinding-browser.min.js"></script>
 
   <script src="game/config/vars.js"></script>
   <script src="game/config/preload.js"></script>
   <script src="game/config/util.js"></script>
+  <script src="game/config/levels.js"></script>
   
   <script src="game/environment/audio.js"></script>
+  <script src="game/environment/particle.js"></script>
   <script src="game/environment/bullet.js"></script>
 
   <script src="game/interface/button.js"></script>
   
   <script src="game/body/body.js"></script>
+  <script src="game/body/block.js"></script>
+  <script src="game/body/unit.js"></script>
   <script src="game/body/player.js"></script>
+  <script src="game/body/item.js"></script>
+  <script src="game/body/base.js"></script>
+  <script src="game/body/turret.js"></script>
+  
+
+  <script src="game/interface/gameui.js"></script>
   
   <script src="game/scenes/menu.js"></script>
   <script src="game/scenes/game.js"></script>
+  <script src="game/scenes/cut.js"></script>
+  <script src="game/scenes/fail.js"></script>
+  <script src="game/scenes/succeed.js"></script>
+  <script src="game/scenes/win.js"></script>
+  <script src="game/scenes/powerups.js"></script>
   
   
   <script src="game/run.js"></script> 
-
-<!--   <script src="https://replit.com/public/js/replit-badge.js" theme="light"></script> -->
 </body>
 
 </html>

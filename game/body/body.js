@@ -3,9 +3,16 @@ class Body {
     this.body = body;
     this.type = type || "body";
     this.dead = false;
+    this.invis = false;
+    this.id = Math.random().toString(36).slice(2);
     
     // Add the body to the world
     World.add(world, this.body);
+  }
+
+  kill() {
+    World.remove(world, this.body);
+    this.dead = true;
   }
   
   draw() {

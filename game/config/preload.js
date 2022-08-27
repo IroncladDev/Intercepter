@@ -23,10 +23,49 @@ function loadSpriteSheet(file, bitmap){
 
 function preload () {
   loadSprite("robot", "logo.png");
-  loadSprite("player-head", "player/player-head.png")
-  loadSprite("player-body", "player/player-body.png")
-  loadSprite("player-pack", "player/player-pack.png")
 
-  loadSprite("gun-rifle-1", "weapons/gun-rifle-1.png")
+  loadSpriteSheet("unit-bodies.png", [
+    ["b-tier-0-body", "b-tier-1-body", "b-tier-3-body", "b-tier-2-body", "r-tier-0-body", "r-tier-1-body", "r-tier-3-body", "r-tier-2-body"]
+  ])
+  
+  loadSpriteSheet("unit-heads.png", [
+    ["b-tier-0-head", "b-tier-1-head", "b-tier-2-head", "b-tier-3-head", "r-tier-0-head", "r-tier-1-head", "r-tier-2-head", "r-tier-3-head"]
+  ])
+
+  loadSpriteSheet("unit-packs.png", [
+    ["b-tier-0-pack", "b-tier-1-pack", "b-tier-2-pack", "b-tier-3-pack", "r-tier-0-pack", "r-tier-1-pack", "r-tier-2-pack", "r-tier-3-pack"]
+  ])
+
+  loadSpriteSheet("guns.png", [
+    ["gun-phaser"],
+    ["gun-shotgun"],
+    ["gun-blaster"],
+    ["gun-hydra"],
+    ["gun-assault"],
+    ["gun-sniper"],
+    ['gun-locust'],
+    ['gun-sidewinder'],
+    ['gun-atomshred'],
+    ['gun-soulsmiter']
+  ])
+
+  loadSpriteSheet("blocks.png", [
+    ["block-[", 'block-=', 'block-|', 'block-L', 'block-+', 'block-o']
+  ])
+
+  loadSprite("coin", "coin.png")
+  loadSprite("chest", "chest.png")
+  loadSprite("base", "base.png")
+  loadSprite("instructions", "instructions.png")
+
+  loadSpriteSheet("turrets.png", [
+    ["turret-!", "turret-#", "turret-$"]
+  ])
+  loadSpriteSheet("icons.png", [
+    ["i0", "i1", "i2"]
+  ])
+  loadSpriteSheet("powericons.png", [
+    ["grenades", "forcefields", "mines", "freezerays", "healthpacks", "nukes"]
+  ])
 }
 

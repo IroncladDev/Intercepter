@@ -9,13 +9,12 @@ class MenuButton {
   }
 
   config(text, x, y, callback){
-    if(this.configed) return;
     this.txt = text;
     this.x = x;
     this.y = y;
+    if(this.configed) return;
     this.callback = callback;
     this.configed = true;
-    this.playedHoversound = false;
   }
 
   display(){
@@ -31,18 +30,14 @@ class MenuButton {
     fill(colors.accentHigher);
     text(this.txt, this.x, this.y);
     if(mouseX > this.x - 75 && mouseY > this.y - 25 && mouseX < this.x + 75 && mouseY < this.y + 25){
-      if(!this.playedHoversound) {
-        playSound("hover.wav");
-        this.playedHoversound = true;
-      }
       cursor("pointer");
       if(this.transition < 255) this.transition += 255/10;
       if(clicked) {
         playSound("click.wav")
         this.callback();
+        clicked = false;
       }
     }else{
-      this.playedHoversound = false;
       if(this.transition > 0) this.transition -= 255/10;
     }
   }

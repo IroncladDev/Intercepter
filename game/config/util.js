@@ -10,3 +10,6 @@ const shortAng = (b, a) => {
   return tests.sort((a, b) => Math.abs(a) - Math.abs(b))[0]
 }
 
+const bodyDist = (a, b) => {
+  return dist(a.body.position.x, a.body.position.y, b.body.position.x, b.body.position.y);
+}
