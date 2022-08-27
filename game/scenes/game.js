@@ -10,11 +10,9 @@ let onScreen = (X, Y) => {
 }
 
 const game = () => {
-  clear();
-  
-  bullets = bullets.filter(x => !x.dead);
-  bodies = bodies.filter(x => !!x.body && !x.dead);
-  particles = particles.filter(x => !x.dead);
+  bullets = bullets.filter(x => !x.dead).filter(u => u.x >= 0 && u.x < mapWidth && u.y >= 0 && u.y < mapHeight);
+  bodies = bodies.filter(x => !!x.body && !x.dead).filter(u => u.body.position.x >= 0 && u.body.position.x < mapWidth && u.body.position.y >= 0 && u.body.position.y < mapHeight);
+  particles = particles.filter(x => !x.dead).filter(u => u.x >= 0 && u.x < mapWidth && u.y >= 0 && u.y < mapHeight);
   camX += (-player.body.position.x - camX)/5;
   camY += (-player.body.position.y - camY)/5;
 

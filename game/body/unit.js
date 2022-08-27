@@ -286,7 +286,14 @@ class Unit extends Body {
     
     let hasTarget = !!this.targetId;
     let self = this;
-    let unitsInRange = bodies.filter(u => (u.type === 'unit'||u.type === 'player'||u.type === 'base'||u.type === "turret"||u.type === 'chest') && u.team !== this.team && bodyDist(self, u) <= 600 && u.id !== self.id).sort((a,b) => bodyDist(self, a) - bodyDist(self, b));
+    let unitsInRange = bodies.filter(u => 
+      u.team !== this.team && 
+      u.type !== "block" &&
+      u.type !== "coin" && 
+      bodyDist(self, u) <= 600 &&
+      u.id !== self.id
+    )
+      .sort((a,b) => bodyDist(self, a) - bodyDist(self, b));
 
     if(unitsInRange.length > 0 && !hasTarget) {
       this.targetId = unitsInRange[0].id;

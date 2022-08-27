@@ -109,11 +109,11 @@ const runGameUI = () => {
       rect(ix + b.body.position.x/blockSize * w - w/2, iy + b.body.position.y/blockSize * h - h/2, w, h)
     }
     if(b.type === 'unit' || b.type === 'turret') {
-      fill((b.team === 'r' ? colors.accentHigher : colors.blueHigher) + opac(100));
+      fill((b.team === 'r' ? colors.accentHigher : colors.blueHigher) + opac(200));
       ellipse(ix + b.body.position.x/blockSize * w, iy + b.body.position.y/blockSize * h, w, h);
     }
     if(b.type === 'base') {
-      fill((b.team === 'r' ? colors.accentHigher : colors.blueHigher) + opac(100));
+      fill((b.team === 'r' ? colors.accentHigher : colors.blueHigher) + opac(200));
       ellipse(ix + b.body.position.x/blockSize * w, iy + b.body.position.y/blockSize * h, w*2, h*2);
     }
   }

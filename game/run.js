@@ -102,6 +102,12 @@ const setLevel = () => {
           restitution: 0.9
         }), 'unit', 'b'));
       }
+      if(char === "A") {
+        bodies.push(new Item("arcanium", cx, cy));
+      }
+      if(char === "C") {
+        bodies.push(new Item("chest", cx, cy));
+      }
     }
   }
 

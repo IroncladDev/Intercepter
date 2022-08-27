@@ -67,5 +67,6 @@ function preload () {
   loadSpriteSheet("powericons.png", [
     ["grenades", "forcefields", "mines", "freezerays", "healthpacks", "nukes"]
   ])
+  loadSprite("arcanium", "arcanium.png")
 }
 

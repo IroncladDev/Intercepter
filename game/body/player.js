@@ -1,7 +1,7 @@
 class Player extends Unit {
   constructor(body) {
     super(body, "player", 'r');
-    this.credits = 500;
+    this.credits = 0;
     this.powerups = {
       "grenades": 0,
       "forcefields": 0,
