@@ -22,7 +22,7 @@ class Block extends Body {
       let { x, y } = self.body.position;
       let s = blockSize/2;
       if(b.x > x - s && b.y > y - s && b.x < x + s && b.y < y + s){
-        if(onScreen(b.x, b.y)){
+        if(onScreen(b.x, b.y) && b.stats.fromId === player.id){
           playSound("bullet-impact.mp3", 0.05, true)
         }
         b.kill();

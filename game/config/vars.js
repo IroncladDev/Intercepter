@@ -56,9 +56,9 @@ const guns = {
     regen: 0.15,
     capacity: 25,
     bulletType: 'default',
-    fireRate: 20,
+    fireRate: 15,
     bullets: 1,
-    speed: 15,
+    speed: 20,
     accuracy: 10,
     cost: 0,
     sound: "gun1.mp3"
@@ -70,9 +70,9 @@ const guns = {
     regen: 0.25,
     capacity: 40,
     bulletType: 'smol',
-    fireRate: 20,
+    fireRate: 15,
     bullets: 10,
-    speed: 10,
+    speed: 15,
     accuracy: 120,
     cost: 35,
     sound: "gun2.mp3"
@@ -85,7 +85,7 @@ const guns = {
     bulletType: 'default',
     fireRate: 15,
     bullets: 1,
-    speed: 20,
+    speed: 25,
     accuracy: 7.5,
     cost: 30,
     sound: "gun3.mp3"
@@ -99,7 +99,7 @@ const guns = {
     bulletType: 'smol',
     fireRate: 5,
     bullets: 1,
-    speed: 10,
+    speed: 15,
     accuracy: 40,
     cost: 75,
     sound: "gun1.mp3"
@@ -112,7 +112,7 @@ const guns = {
     bulletType: 'default',
     fireRate: 5,
     bullets: 1,
-    speed: 20,
+    speed: 25,
     accuracy: 7.5,
     cost: 70,
     sound: "gun3.mp3"
@@ -125,7 +125,7 @@ const guns = {
     bulletType: 'default',
     fireRate: 20,
     bullets: 1,
-    speed: 25,
+    speed: 30,
     accuracy: 0,
     cost: 90,
     sound: "gun4.mp3"
@@ -134,12 +134,12 @@ const guns = {
   "locust": {
     upg: false,
     damage: 2,
-    regen: 0.6,
+    regen: 1,
     capacity: 100,
     bulletType: 'smol',
     fireRate: 2,
     bullets: 3,
-    speed: 15,
+    speed: 20,
     accuracy: 60,
     cost: 225,
     sound: "gun3.mp3"
@@ -160,7 +160,7 @@ const guns = {
   "atomshred": {
     upg: false,
     damage: 80,
-    regen: 2.5,
+    regen: 1,
     capacity: 160,
     bulletType: 'default',
     fireRate: 15,

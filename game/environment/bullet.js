@@ -19,7 +19,7 @@ class Bullet {
   }
 
   preDie() {
-    for(let i = 10; i--;) particles.push(new Particle("spark", this.x, this.y, this.r + Math.PI));
+    for(let i = 5; i--;) particles.push(new Particle("spark", this.x, this.y, this.r + Math.PI));
 
     if(this.type === "grenade") {
       playSound("explosion.mp3", 0.075, true)

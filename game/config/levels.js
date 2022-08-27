@@ -255,8 +255,8 @@ const levels = [
     name: "Encapsulated",
     description: "You have successfully made it into the enemy base.  Overtake it and destroy it.  Every last enemy structure and unit must be destroyed.",
     m: [
-      "0                 0     00     0                 0",
-      "0                 0     00     0                 0",
+      "0                       00                       0",
+      "0                       00                       0",
       "0000000000000000000     00     0000000000000000000",
       "0000000000  0     0     00     0     0  0000000000",
       "0000000                  @                 !000000",

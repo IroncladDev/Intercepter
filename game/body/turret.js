@@ -91,10 +91,7 @@ class Turret extends Body {
             team: this.team,
             fromId: this.id
           });
-          bullets.push(b)
-          if(onScreen(this.body.position.x, this.body.position.y)){
-            playSound(this.sound, 0.05, true)
-          }
+          bullets.push(b);
         }
       }else {
         this.targetId = ""
