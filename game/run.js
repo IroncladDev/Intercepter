@@ -1,4 +1,4 @@
-
+// This is a comment which I've commited through git!
 let bg, bgTex;
 let bgSize = 100;
 
