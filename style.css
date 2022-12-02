@@ -1,23 +1,23 @@
-* {
+* { /* root */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html, body { /*html, body */
   height: 100%;
   width: 100%;
   background: black;
 }
 
-canvas{
+canvas{ /* canvas styles */
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#window-overlay {
+#window-overlay { /* overlay window */
   position: fixed;
   top: 0;
   left: 0;
@@ -28,7 +28,7 @@ canvas{
   padding: 10vh 20px;
 }
 
-h1, h2 {
+h1, h2 { /* header styles */
   color: #eb1c56;
   text-align: center;
   font-family: 'Orbitron', Monaco;
